@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "./ui/dialog";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "./ui/breadcrumb";
 import { VersionHistory } from "./VersionHistory";
 
@@ -709,7 +709,7 @@ export function DatabaseView() {
                             {/* Thumbnail or Icon */}
                             <div className="aspect-video bg-muted relative overflow-hidden">
                               {file.thumbnail ? (
-                                <ImageWithFallback
+                                <img
                                   src={file.thumbnail}
                                   alt={file.name}
                                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
@@ -804,7 +804,7 @@ export function DatabaseView() {
                               {/* Thumbnail or Icon */}
                               <div className="w-16 h-16 bg-muted rounded flex items-center justify-center flex-shrink-0 overflow-hidden">
                                 {file.thumbnail ? (
-                                  <ImageWithFallback
+                                  <img
                                     src={file.thumbnail}
                                     alt={file.name}
                                     className="w-full h-full object-cover"
@@ -899,7 +899,7 @@ export function DatabaseView() {
                 {/* Preview */}
                 {selectedFile.thumbnail && (
                   <div className="w-full aspect-video bg-muted rounded-lg overflow-hidden">
-                    <ImageWithFallback
+                    <img
                       src={selectedFile.thumbnail}
                       alt={selectedFile.name}
                       className="w-full h-full object-contain"

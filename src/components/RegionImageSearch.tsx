@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Crop, Search, X, ZoomIn, Image as ImageIcon, AlertCircle, Loader2 } from "lucide-react";
 import { Alert, AlertDescription } from "./ui/alert";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+
 
 interface RegionMatch {
   id: string;
@@ -150,7 +150,7 @@ export function RegionImageSearch() {
               {/* Image Display */}
               <div className="relative">
                 <div className="border border-border rounded-lg overflow-hidden bg-muted/30">
-                  <ImageWithFallback
+                  <img
                     src={selectedImage}
                     alt="Selected image"
                     className="w-full h-auto max-h-[500px] object-contain"
@@ -257,7 +257,7 @@ export function RegionImageSearch() {
                   <div className="space-y-3">
                     {/* Thumbnail */}
                     <div className="relative aspect-video bg-muted rounded-lg overflow-hidden">
-                      <ImageWithFallback
+                      <img
                         src={result.thumbnail}
                         alt={result.imageName}
                         className="w-full h-full object-cover"

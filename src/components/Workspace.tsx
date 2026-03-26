@@ -35,7 +35,7 @@ import {
   FolderPlus,
   Sparkles,
 } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+
 import {
   DropdownMenu,
   DropdownMenuContent,

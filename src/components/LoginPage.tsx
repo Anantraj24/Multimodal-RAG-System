@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Badge } from "./ui/badge";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+
 
 interface LoginPageProps {
   onLogin: (username: string, role: "Analyst" | "Supervisor" | "Admin", isDummy?: boolean) => void;
@@ -142,8 +142,8 @@ export function LoginPage({ onLogin }: LoginPageProps) {
     <div className="min-h-screen bg-background flex items-center justify-center p-4 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <ImageWithFallback
-          src="https://images.unsplash.com/photo-1639322537504-6427a16b0a28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWN1cmUlMjBhdXRoZW50aWNhdGlvbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYwMzYwNzg1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+        <img
+          src="https://images.unsplash.com/photo-1639322537504-6427a16b0a28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWN1cmUlMjBhdXRoZW50aWNhdGlvbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYwMzYwNzg1fDA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Security Background"
           className="w-full h-full object-cover opacity-5"
         />

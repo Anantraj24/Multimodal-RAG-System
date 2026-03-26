@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Card } from "./ui/card";
 import { FileText, Image as ImageIcon, Mic, Folder, TrendingUp, Clock, Sparkles, Brain, Network, Quote, Link2, Crop, GitCompare, Send, MessageSquare, Zap, FileSearch, BarChart, X } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+
 import { SearchHistory } from "./SearchHistory";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
@@ -114,8 +114,8 @@ export function Dashboard() {
       {/* Hero Section */}
       <Card className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NjAzMjY1OTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          <img
+            src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NjAzMjY1OTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="AI Technology"
             className="w-full h-full object-cover opacity-20"
           />
